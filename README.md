@@ -38,5 +38,5 @@ Please note the code is mostly self-configuring and can autonomously take care o
 That being said, feel free to mess with the library internal parameters (such as buffer and filter sizes): if you find anything interesting and worth of notice, I'd be pleased to discuss it with you. 
 
 
-At the moment, the library performs one full scan per iteration, with is somewhat slow. If you need faster response times, use this other library instead: 
+At the moment, the library performs one full scan per iteration, which is somewhat slow. If you need faster response times, use this other library instead: 
 https://github.com/paoloinverse/bistatic_interference_radar_esp
