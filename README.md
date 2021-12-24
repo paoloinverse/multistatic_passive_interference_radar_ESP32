@@ -1,4 +1,4 @@
-# Multistatic interference radar fully based on the ESP32 DevKit onboard wifi radio.
+# Multistatic passive interference radar fully based on the ESP32 DevKit onboard wifi radio.
 
 Do you really need to connect your ESP32 SoC to external movement detector sensors such as infrared PIR, ultrasonic or dedicated radar sensors, 
 when the ESP32 itself can work as a passive radar *without any additional hardware* ?
