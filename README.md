@@ -29,11 +29,13 @@ The example contains a serial commands function with a very simple way to manual
 
 
 Commented example plot follows:
+![multistatic_interference_radar_sample_4](https://user-images.githubusercontent.com/62485162/147374363-2aff0c62-4fda-491a-add7-f48e8588a33b.png)
 
+Access point names censored, the plot data cointains both RSSI and filtered signal variance data for each transmitter.
 
-The plot is in arbitrary units derived from the received signasl variance data, it is contructed by a relatively complex digital filter entirely built in integer math, with a low computational expense.
+The plot is in arbitrary units derived from the received signal variance data, it is contructed by a relatively complex digital filter entirely built in integer math, with a low computational expense.
 
-Please note the code is mostly self-configuring and can autonomously take care of the common problems and failures typically encountered in a wifi based infrastructure, incuding faults affecting the nearby access points and stations. 
+Please note the code is mostly self-configuring and can autonomously take care of the common problems and failures typically encountered in a wifi based infrastructure, incuding faults affecting the nearby access points and stations. Yet, I warmly recommend to take a few minutes to tweak the parameters (minimum acceptable RSSI and used transmitters number) for your specific environment. I also recommend you set the minimum acceptable RSSI much lower than the average RSSI of the weakest signal you're receiving, because when a signal is lost or deemed unceeptably low, it will be replaced... and variance data will have to be reconstructed. This will take some time.
 
 That being said, feel free to mess with the library internal parameters (such as buffer and filter sizes): if you find anything interesting and worth of notice, I'd be pleased to discuss it with you. 
 
