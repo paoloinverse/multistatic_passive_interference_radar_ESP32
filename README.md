@@ -31,7 +31,7 @@ The example contains a serial commands function with a very simple way to manual
 Commented example plot follows:
 ![multistatic_interference_radar_sample_4](https://user-images.githubusercontent.com/62485162/147374363-2aff0c62-4fda-491a-add7-f48e8588a33b.png)
 
-Access point names censored, the plot data cointains both RSSI and filtered signal variance data for each transmitter.
+Access point names censored, the uncensored parts contain both RSSI and filtered signal variance data for each transmitter.
 
 The plot is in arbitrary units derived from the received signal variance data, it is contructed by a relatively complex digital filter entirely built in integer math, with a low computational expense.
 
